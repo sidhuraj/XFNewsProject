@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             mc:Ignorable="d"
+             x:Class="News.View.BookmarkView">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Delete" Command="{Binding Delete}" Priority="0"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <CollectionView ItemsSource="{Binding Bookmarkpage}" SelectionMode="Single" SelectedItem="{Binding selecteditem,Mode=TwoWay}">
+                <!--EmptyView="No Bookmarks">-->
+                <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="2"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="5" BackgroundColor="White" >
+                            <Grid BackgroundColor="Gainsboro">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100"/>
+                                </Grid.RowDefinitions>
+                                <ffimageloading:CachedImage Source="{Binding urlToImage}" Aspect="AspectFill"/>
+                                <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Fill">
+                                    <Label  Text="{Binding title}" FontSize="Body" TextColor="Blue" Margin="5" MaxLines="3"/>
+                                    <Label Text="{Binding publishedAt}" FontSize="Small" TextColor="Gray" VerticalOptions="EndAndExpand" Margin="5"/>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+          </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

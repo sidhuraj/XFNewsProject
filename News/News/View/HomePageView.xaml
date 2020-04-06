@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="News.View.HomePageView">
+    <MasterDetailPage.ToolbarItems>
+        <ToolbarItem IconImageSource="camera.png"  Priority="0" Command="{Binding Camera}" Order="Default" /> <!--d:Command="{Binding Photocam}" x:Name="Photocam"--> 
+        <ToolbarItem Text="Login" Command="{Binding login}" Priority="1"  Order="Secondary" />
+    </MasterDetailPage.ToolbarItems>
+    <MasterDetailPage.Master>
+        <ContentPage Title="HomePage">
+            <ContentPage.Content>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Image Source="Weather.jpg" Aspect="AspectFill"/>
+                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                            <Label Text="{Binding city}" TextColor="Black" FontSize="Large" FontAttributes="Bold" VerticalOptions="Center"/>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Temprature:" TextColor="Black" FontSize="22" HorizontalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding temprature}" TextColor="Black" FontSize="25" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Humadity:" TextColor="Black" FontSize="22" HorizontalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding humadity}" TextColor="Black" FontSize="25" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                    <StackLayout Grid.Row="1" Spacing="15">
+                        <!--<ListView x:Name="NavigationList" RowHeight="60"
+                              SeparatorVisibility="None"
+                              BackgroundColor="White"
+                              ItemSelected="OnMenuItemSelected">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout VerticalOptions="FillAndExpand"
+                                                 Orientation="Horizontal"
+                                                 Padding="20,0,0,0"
+                                                 Spacing="10">
+                                            -->
+                        <!--<Image Source="{Binding Icon}" HeightRequest="40" WidthRequest="40" VerticalOptions="Center"/>-->
+                        <!--
+                                            <Label Text="{Binding Title}" FontSize="Medium" VerticalOptions="Center" TextColor="Black"/>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>-->
+                        <Label Text="Home" FontSize="Medium" Margin="10,10,0,10" VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Home}" NumberOfTapsRequired="1"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label  Text="Bookmark"  FontSize="Large" Margin="10,10,0,10" VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Bookmark}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label  Text="PopupLoginPage"  FontSize="Large" Margin="10,10,0,10" VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Popup}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label  Text="AbsoluteOverlap"  FontSize="Large" Margin="10,10,0,10" VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AbsoluteOverlap}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label  Text="WebViewPage"  FontSize="Large" Margin="10,10,0,10" VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding WebViewPage}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+
+
+
+                    </StackLayout>
+                </Grid>
+            </ContentPage.Content>
+            
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>
+
+
+
+
+
+
+   

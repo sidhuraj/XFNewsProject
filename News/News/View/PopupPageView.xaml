@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Page:PopupPage
+             xmlns:Page="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="News.View.PopupPageView">
+    <StackLayout Margin="12" Padding="24" Spacing="24" BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout>
+            <Label Text="Login" FontSize="30"/>
+            <Entry Placeholder="username@gmail.com"
+                   FontSize="30"/>
+            <StackLayout>
+                <Label Text="Password" FontSize="30"/>
+                <Entry Placeholder="Password123" FontSize="30" IsPassword="False"/>
+           </StackLayout>
+            <StackLayout>
+                <Button BackgroundColor="Gainsboro" FontSize="30" Text="Login" TextColor="White" Command="{Binding login}"/>
+                <Button BackgroundColor="Blue" FontSize="20" Text="POPRooT" TextColor="White" Command="{Binding POPRooT}"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+ </Page:PopupPage>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             mc:Ignorable="d"
+             x:Class="News.View.FASHION"
+             Title="FASHION">
+    <ContentPage.Content>
+        <StackLayout>
+            <CollectionView ItemsSource="{Binding MoviesList}" SelectedItem="{Binding SelectMovie,Mode=TwoWay}" SelectionMode="Single">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="2"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout  Padding="5" BackgroundColor="White">
+                            <Grid BackgroundColor="Gainsboro">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="80"/>
+                            </Grid.RowDefinitions>
+                                <ffimageloading:CachedImage  Source ="{Binding urlToImage }" Margin="5" Aspect="AspectFill" />
+                            <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Fill">
+                                    <Label Text="{Binding title }" FontSize="Body" TextColor="Blue" Margin="5" MaxLines="3"/>
+                                    <Label Text="{Binding publishedAt}" FontSize="Small" TextColor="Gray" VerticalOptions="EndAndExpand" Margin="5"/>
+                                <!--<Label Text="{Binding content }"/>-->
+                                <!--<Label Text="{Binding description }"/>-->
+                                <!--<Label Text="{Binding url }"/>-->
+                                <!--<Label Text="{Binding author }"/>-->         
+                            </StackLayout>
+                        </Grid>
+                       </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

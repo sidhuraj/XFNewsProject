@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:shimmer="clr-namespace:Syncfusion.XForms.Shimmer;assembly=Syncfusion.Core.XForms"
+             mc:Ignorable="d"
+             x:Class="News.View.AllDetailsView">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Bookmark" Priority="0" Command="{Binding bookmark}"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <shimmer:SfShimmer IsActive="True" AnimationDuration="2000"
+                           Type="Profile" Color="#CECEEF"
+                           WaveColor="#E7E7F9" WaveWidth="100">
+            <shimmer:SfShimmer.CustomView>
+                <StackLayout Margin="5">
+            <ffimageloading:CachedImage  Source="{Binding imgArticle}">
+            </ffimageloading:CachedImage>
+            <Label Text="{Binding Title}" FontSize="Large" TextColor="Black"/>
+            <StackLayout Orientation="Horizontal" Margin="10">
+                <Label Text="{Binding PublishedAt}" FontSize="Small"/>
+                <Label Text="|" FontSize="Body" TextColor="Black"/>
+                <Label Text="By" FontSize="Small"/>
+                <Label Text="{Binding Author}" FontSize="Small"/>
+            </StackLayout>
+            <ScrollView>
+                <Label Text="{Binding Content}" FontSize="Body" MaxLines="100" />
+            </ScrollView>
+        </StackLayout>
+            </shimmer:SfShimmer.CustomView>
+        </shimmer:SfShimmer>
+    </ContentPage.Content>
+</ContentPage>
+    
+   
+    <!--</ContentPage.Content>-->
+        

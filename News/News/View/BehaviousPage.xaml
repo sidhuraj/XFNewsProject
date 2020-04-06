@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:behavios="clr-namespace:News.behavious"
+              xmlns:sync="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             mc:Ignorable="d"
+             x:Class="News.View.BehaviousPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <sync:SfRadioButton Text="Are you Playing?"/>
+            <sync:SfCheckBox Text="Are you reading?"/>
+            <sync:SfSegmentedControl/>
+
+            <sync:SfSwitch IsOn="True"/>
+
+            <Entry x:Name="etEmail" Placeholder="Enter EmailID">
+                <Entry.Behaviors>
+                    <behavios:EmailValidateBehaviour/>
+                </Entry.Behaviors>
+            </Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage><Editor />
+
+
+
+
+
+
+
+
+
+
+<!--<ListView ItemsSource="">
+    <ListView.ItemTemplate>
+        <DataTemplate></DataTemplate>
+    </ListView.ItemTemplate>
+</ListView>
+
+<Box
+<ActivityIndicator />
+<Button Text="" />
+<CarouselView ItemsSource=""><CarouselView.ItemTemplate><DataTemplate></DataTemplate></CarouselView.ItemTemplate></CarouselView>
+<CollectionView ItemsSource=""><CollectionView.ItemTemplate><CollectionView.ItemsLayout><GridItemsLayout Span="2" Orientation="Vertical" /></CollectionView.ItemsLayout><DataTemplate></DataTemplate></CollectionView.ItemTemplate></CollectionView>
+<DatePicker />
+<Editor />
+<Entry Placeholder="" />
+<Image Source="" />
+<Label Text="" />
+<ListView ItemsSource=""><ListView.ItemTemplate><DataTemplate></DataTemplate></ListView.ItemTemplate></ListView>
+<Picker Title="" />
+<ProgressBar />
+<SearchBar Placeholder="" />
+<Slider Minimum="0" Maximum="1" />
+<Stepper Minimum="0" Maximum="10" Increment="1" />
+<Switch IsToggled="false" />
+<TableView><TableRoot><TableSection></TableSection></TableRoot></TableView>
+<TimePicker />
+<WebView Source="" />View />
+    
+<ContentView></ContentView>
+<Frame></Frame>
+<ScrollView></ScrollView>
+<AbsoluteLayout></AbsoluteLayout>
+<FlexLayout></FlexLayout>
+<Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*" /></Grid.ColumnDefinitions><Grid.RowDefinitions><RowDefinition Height="*" /></Grid.RowDefinitions></Grid>
+<RelativeLayout></RelativeLayout>
+<StackLayout></StackLayout>
+<EntryCell Label="" Placeholder="" />
+<SwitchCell Text="" On="false" />
+<TextCell Text="" Detail="" />
+<ImageCell Text="" ImageSource="" />
+<ViewCell />-->

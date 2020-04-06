@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Page:BottomBarPage
+             xmlns:Page="clr-namespace:BottomBar.XamarinForms;assembly=BottomBar.XamarinForms"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:snav="clr-namespace:Android;assembly=Mono.Android"
+             mc:Ignorable="d"
+             x:Class="News.MainPage" Title="Mainpage"
+    BackgroundColor="Black">
+    
+    <!--<Page:BottomBarPage.NavContent>
+        
+            <snav:SNavigationPage.NavContent>
+                <Grid Margin="50, 0, 50, 0"
+              >
+                    <SearchBar BackgroundColor="White"
+                       Placeholder="Search ..."
+                       />
+                </Grid>
+            </snav:SNavigationPage.NavContent>
+        
+    </Page:BottomBarPage.NavContent>-->
+    
+    <NavigationPage.TitleView>
+        <SearchBar Text="search"  HeightRequest="44" WidthRequest="600" Margin="10,5,10,5" HorizontalOptions="Center"  BackgroundColor="White"/>
+    </NavigationPage.TitleView>
+
+    <ContentPage Title="Home" IconImageSource="santosh.png"  Page:BottomBarPageExtensions.TabColor="#5D4037"/>
+    
+    <!--Page:BottomBarPageExtensions.BadgeCount="6" Page:BottomBarPageExtensions.BadgeColor="Deepink"/>-->
+    <ContentPage Title="Store" IconImageSource="akshay.png">
+        <ContentPage.Content>
+            <StackLayout Orientation="Vertical">
+                <Label Text="This is santhosh"/>
+                <Button Text="This is store page"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+     
+    <ContentPage Title="Favorite">
+        <ContentPage.Content>
+            <StackLayout Orientation="Vertical">
+                <Label Text="This is santhosh"/>
+                <Button Text="This is Favorite page"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    <!--IconImageSource="Favorite.png"-->
+    <ContentPage Title="Profile" Page:BottomBarPageExtensions.TabColor="BlueViolet">
+        <ContentPage.Content>
+            <StackLayout Orientation="Vertical">
+                <Label Text="This is santhosh"/>
+                <Button Text="This is Profile page"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    <!--IconImageSource="Profile.png"-->
+    
+    <ContentPage>
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="Bottom NavigationBar"  HorizontalOptions="Center" VerticalOptions="Center"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+</Page:BottomBarPage>

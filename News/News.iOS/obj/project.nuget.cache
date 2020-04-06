@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "mRq6zfSueg3rYxdwag8aNUiz3vlXsIzAOMNDPyApHImNbrcbz7Hvf5kRU1OUJX5AIUqNoWIBWdvvvCRm6HU5cw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\santosh\\source\\repos\\News\\News\\News.iOS\\News.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\santosh\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\plugin.permissions\\5.0.0-beta\\plugin.permissions.5.0.0-beta.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\rg.plugins.popup\\1.2.0.223\\rg.plugins.popup.1.2.0.223.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\sqlite-net-pcl\\1.6.292\\sqlite-net-pcl.1.6.292.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.13\\sqlitepclraw.bundle_green.1.1.13.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\sqlitepclraw.core\\1.1.13\\sqlitepclraw.core.1.1.13.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\sqlitepclraw.provider.sqlite3.ios_unified\\1.1.13\\sqlitepclraw.provider.sqlite3.ios_unified.1.1.13.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\syncfusion.licensing\\17.4.0.50\\syncfusion.licensing.17.4.0.50.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\syncfusion.xamarin.buttons\\17.4.0.50\\syncfusion.xamarin.buttons.17.4.0.50.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\syncfusion.xamarin.core\\17.4.0.50\\syncfusion.xamarin.core.17.4.0.50.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\thrivegmbh.bottomnavigationbar.xf\\1.0.2\\thrivegmbh.bottomnavigationbar.xf.1.0.2.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\webp.touch\\1.0.8\\webp.touch.1.0.8.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\xam.plugin.connectivity\\3.2.0\\xam.plugin.connectivity.3.2.0.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\xam.plugin.media\\4.4.10-beta\\xam.plugin.media.4.4.10-beta.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\xamarin.controls.signaturepad\\3.0.0\\xamarin.controls.signaturepad.3.0.0.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\xamarin.controls.signaturepad.forms\\3.0.0\\xamarin.controls.signaturepad.forms.3.0.0.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\xamarin.essentials\\1.2.0\\xamarin.essentials.1.2.0.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\xamarin.forms\\4.2.0.709249\\xamarin.forms.4.2.0.709249.nupkg.sha512",
+    "C:\\Users\\santosh\\.nuget\\packages\\xamarin.forms.skeleton\\1.0.0\\xamarin.forms.skeleton.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
